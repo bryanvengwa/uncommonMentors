@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "light";
+    src: url(/fonts/RedHatDisplay-Light.ttf);
+}
+
+@font-face {
+    font-family: "medium";
+    src: url(/fonts/RedHatDisplay-Medium.ttf);
+}
+
+@font-face {
+    font-family: "extrabold";
+    src: url(/fonts/RedHatDisplay-ExtraBold.ttf);
+}

@@ -1,0 +1,161 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+$blue :#1CA4CF; 
+header{ 
+       .menu{ display: block; background: $blue; border-radius: 5px; display: flex; align-items: center; justify-content: center; flex-direction: column; position: fixed; right: 2em; top: 1em;  width: 4rem; height: 3rem; 
+              .bar{ margin: 0.2em; background-color: black; width :75% ; border-radius: 5px; height: 0.45rem; }
+       }
+         nav{display: none;}
+
+       .main{ width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;
+              h1{font-size: 3rem; font-family: 'extrabold'; margin-top: 0.2em;}
+              p{text-align: center; font-size: 1.1rem; line-height: 1.1em; margin-top: 0.5em;  margin: 0.5em; font-weight: 500; font-family:'light'; }
+              button{ margin-top: 0.7em; background:$blue; border-radius: 5px;  border-bottom: 0.5em; font-family: 'medium'; color: white; padding: 1em 2em; border: none; }
+       }
+}
+.about-header{ 
+       .main{
+              h1{font-size: 1.9rem; }
+       }
+}
+.find-header{
+       .main{background-image: url(img/rings.png)  ; background-position: left; background-size: contain; background-repeat: no-repeat; }
+}
+
+
+
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {  
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) { 
+       header{ 
+     nav{display: none;}
+     .main{  p {  font-size: 1.2rem; font-family: 'medium'; }}
+
+
+       }
+       .about-header{ 
+       .main{
+              h1{font-size: 2.5rem; text-align: center; }
+              p{text-align: center; font-size: 1.3rem; }
+       }
+ }
+.find-header{
+       .main{background-position-x: -1em; background-position-y: 12em; }
+}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+       header{ .menu{display: none;}  nav{display: block; ul{display: flex;  
+       li{ .button{background:$blue;  border-radius: 5px; color: white; padding: 1em 2em; }
+              a{ padding: 0.7em; font-size: 1.06rem; font-family: 'medium'; text-decoration: none; color: black;  }}
+       } }
+
+             .main{ align-items: self-start; margin-top: -3em;
+              h1{font-size: 6.5rem; font-family: 900; margin-top: 0.2em; }
+              
+              p{font-size: 1.4rem; line-height: 1.35em; font-family: 'medium'; text-align: unset;  margin-top: 2em;}
+              button{font-size: 1.3rem; margin-top: 2em; padding: 0.7em 2.3em;font-family: 'medium' }
+       }
+}
+       .about-header{  
+       .main{ margin-top: -7em;
+              h1{font-size: 3.5rem; margin-top: 0.3em; text-align: center; }
+              p{text-align: center; font-size: 1.3rem; }
+       }
+}
+       .mentor-header{ 
+       .main{  p{text-align: start;  }}
+}
+ 
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}
