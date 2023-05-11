@@ -63,15 +63,15 @@ header .menu {
   position: fixed;
   right: 2em;
   top: 1em;
-  width: 4rem;
+  width: 3.5rem;
   height: 3rem;
 }
 header .menu .bar {
   margin: 0.2em;
   background-color: black;
-  width: 75%;
+  width: 70%;
   border-radius: 5px;
-  height: 0.45rem;
+  height: 0.4rem;
 }
 header nav {
   display: none;
@@ -86,11 +86,13 @@ header .main {
 }
 header .main h1 {
   font-size: 3rem;
+  align-self: baseline;
+  align-self: flex-start;
   font-family: "extrabold";
   margin-top: 0.2em;
+  text-align: left !important;
 }
 header .main p {
-  text-align: center;
   font-size: 1.1rem;
   line-height: 1.1em;
   margin-top: 0.5em;
@@ -109,15 +111,311 @@ header .main button {
   border: none;
 }
 
-.about-header .main h1 {
-  font-size: 1.9rem;
+.how h1 {
+  font-family: "extrabold";
+  font-size: 2rem;
+}
+.how h2 {
+  font-family: "extrabold";
+  font-size: 1.5rem;
+}
+.how p {
+  font-family: "light";
+  font-size: 1.2rem;
+  line-height: 1.2em;
 }
 
-.find-header .main {
-  background-image: url(img/rings.png);
-  background-position: left;
-  background-size: contain;
+#prog-about {
+  background: unset;
+}
+
+.programme {
+  background: #D9D9D9;
+}
+
+.become {
+  background: #1CA4CF;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.become p {
+  text-align: center;
+}
+.become button {
+  background: white;
+  font-family: "regular";
+  padding: 1em 2em;
+  border: none;
+}
+
+.meet h1 {
+  font-family: 2rem;
+  font-family: "extrabold";
+  text-align: center;
+}
+.meet p {
+  font-family: "medium";
+  text-align: center;
+}
+.meet ul {
+  display: flex;
+}
+.meet ul li {
+  list-style: none;
+  padding: 0.3em;
+  font-family: "semi-bold";
+}
+.meet .images {
+  display: flex;
+  flex-wrap: wrap;
+}
+.meet .images .img-container {
+  height: 3.8rem;
+  width: 3.8rem;
+}
+.meet .images .img-container img {
+  margin: 1em;
+  padding: 0.1em;
+}
+.meet .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.meet .profile-container {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+}
+.meet .profile-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.meet .profile-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.meet h2 {
+  font-family: "semi-bold";
+  font-size: 1.4rem;
+}
+.meet h3 {
+  color: #000000;
+  font-size: 1.2rem;
+}
+.meet p {
+  font-family: "light";
+}
+.meet button {
+  background: #1CA4CF;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.3rem;
+  padding: 0.9em 2.3em;
+  color: white;
+  font-family: "medium";
+}
+.meet ul li a img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.pix {
+  height: 50vh;
+  background-image: url(img/many\ faces.png);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.forms h1 {
+  font-family: "medium";
+  font-size: 1.2rem;
+  text-align: center;
+}
+.forms h2 {
+  font-family: "regular";
+  text-align: center;
+}
+.forms form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.forms form input {
+  margin: 1em;
+  padding: 0.5em;
+  font-family: "regular";
+  color: black;
+  background: #D9D9D9;
+  border: none;
+  height: 4rem;
+  width: 100%;
+}
+.forms form button {
+  background: #1CA4CF;
+  margin: 1em;
+  font-family: "medium";
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 1em;
+}
+
+footer h1 {
+  font-family: "extrabold";
+  font-size: 1.7rem;
+  text-align: center;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer ul li {
+  font-family: "semi-bold";
+  font-family: 1rem;
+}
+footer ul .img-container {
+  display: flex;
+  justify-content: center;
+}
+footer ul .img-container img {
+  height: 20%;
+  padding: 0.3em;
+  width: 20%;
+}
+
+.second {
+  background: #1CA4CF;
+  color: white;
+  padding: 1em;
+}
+.second h1 {
+  font-family: "extrabold";
+  font-size: 2rem;
+}
+.second h2 {
+  font-family: "extrabold";
+}
+.second p {
+  font-family: "medium";
+}
+
+#second-mentor h1 {
+  font-family: "extrabold";
+}
+#second-mentor p {
+  font-family: "regular";
+}
+#second-mentor h2 {
+  font-family: "extrabold";
+}
+#second-mentor h3 {
+  font-family: "extrabold";
+}
+#second-mentor #flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-header .main h1 {
+  font-size: 1.9rem;
+  text-align: left;
+}
+
+.active-link {
+  font-family: "extrabold";
+  font-size: 1.04rem;
+}
+
+.active {
+  outline: 3px solid #1CA4CF;
+  border-radius: 50%;
+  padding: 0.1em;
+}
+
+.active-course {
+  text-decoration: underline;
+  text-decoration-color: #1CA4CF;
+  color: #1CA4CF;
+}
+
+.sign-up, .logging-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+  height: 145vh;
+  background: white;
+  top: 0;
+}
+.sign-up h1, .logging-in h1 {
+  font-size: 1.2rem;
+  font-family: "extrabold";
+  text-align: left;
+}
+.sign-up form, .logging-in form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.sign-up form input, .logging-in form input {
+  width: 80%;
+  border-radius: 5px;
+  margin: 0.5em;
+  padding: 1em;
+  border: none;
+  background: #D9D9D9;
+  height: 3.2rem;
+  font-family: "medium";
+}
+.sign-up form p, .logging-in form p {
+  font-family: "medium";
+}
+.sign-up form p span a, .logging-in form p span a {
+  text-decoration: none;
+  color: #1CA4CF;
+}
+.sign-up form button, .logging-in form button {
+  width: 80%;
+  height: 3.2rem;
+  background: #1CA4CF;
+  color: white;
+  border: none;
+  font-family: "medium";
+  border-radius: 5px;
+}
+.sign-up form .google, .logging-in form .google {
+  background: #D9D9D9;
+  color: black;
+}
+.sign-up img, .logging-in img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.hide {
+  opacity: 0;
+  display: none !important;
+  transition: 1s opacity ease-in-out;
 }
 
 /*
@@ -139,21 +437,247 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   header nav {
     display: none;
   }
+  header .main h1 {
+    margin-left: 0.3em;
+    text-align: left;
+  }
+  header .main #left {
+    text-align: left !important;
+  }
   header .main p {
+    text-align: left;
     font-size: 1.2rem;
     font-family: "medium";
+  }
+  #second-mentor {
+    height: 83vh;
+  }
+  #second-mentor h1 {
+    font-family: "extrabold";
+  }
+  #second-mentor p {
+    font-family: "regular";
+  }
+  #second-mentor h2 {
+    font-family: "semi-bold";
+  }
+  #second-mentor h3 {
+    font-family: "extrabold";
+    font-size: 1.6rem;
+  }
+  #second-mentor h3 .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .second {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  .second h1 {
+    font-size: 2.8rem;
+    text-align: start;
+  }
+  .second h2 {
+    font-size: 2rem;
+    text-align: start;
+    font-family: "semi-bold";
+  }
+  .second p {
+    font-size: 1.6rem;
+    text-align: start;
+    font-family: "light";
+  }
+  .forms h1 {
+    font-size: 1.8rem;
+    text-align: left;
+    margin: 1em;
+  }
+  .forms h2 {
+    text-align: left;
+    margin: 1em;
+    font-size: 1.3rem;
+  }
+  .forms form {
+    display: flex;
+    flex-wrap: no-wrap;
+  }
+  .forms form .w50 {
+    width: 45%;
+    margin: 1em;
+  }
+  .forms form input {
+    margin: 1em;
+    padding: 0.5em;
+    font-family: "regular";
+    color: black;
+    background: #D9D9D9;
+    border: none;
+    height: 4rem;
+    width: 94%;
+  }
+  .forms form button {
+    background: #1CA4CF;
+    margin: 1em;
+    color: white;
+    width: 95%;
+    border: none;
+    padding: 1em;
+  }
+  footer h1 {
+    font-size: 2.5rem;
+    text-align: unset;
+  }
+  footer ul {
+    justify-content: start;
+    align-items: start;
+  }
+  footer ul li {
+    font-family: "semi-bold";
+    font-size: 1.8rem;
+  }
+  footer ul .img-container {
+    display: flex;
+    justify-content: center;
+  }
+  footer ul .img-container img {
+    height: 20%;
+    padding: 0.3em;
+    width: 20%;
+  }
+  .how h1 {
+    font-size: 3rem;
+  }
+  .how h2 {
+    font-size: 2.5rem;
+  }
+  .how p {
+    font-size: 2rem;
+  }
+  .programme {
+    padding: 3em;
   }
   .about-header .main h1 {
     font-size: 2.5rem;
     text-align: center;
   }
   .about-header .main p {
-    text-align: center;
+    text-align: left;
     font-size: 1.3rem;
   }
   .find-header .main {
     background-position-x: -1em;
     background-position-y: 12em;
+  }
+  .meet h1 {
+    font-size: 2rem;
+    text-align: start;
+  }
+  .meet p {
+    font-size: 1.1rem;
+    font-family: "medium";
+    text-align: start;
+  }
+  .meet ul li {
+    padding: 0.2em;
+  }
+  .meet .images .img-container {
+    height: 5rem;
+    width: 5rem;
+  }
+  .meet .profile-text {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+  }
+  .meet h2 {
+    font-size: 1.4rem;
+  }
+  .meet h3 {
+    color: #000000;
+    font-size: 1.2rem;
+  }
+  .meet p {
+    font-family: "light";
+  }
+  .meet button {
+    background: #1CA4CF;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3rem;
+    padding: 0.9em 2.3em;
+    color: white;
+    font-family: "medium";
+  }
+  .meet ul li a img {
+    height: 2rem;
+    width: 2rem;
+  }
+  .sign-up, .logging-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 70vh;
+    background: white;
+    top: 0;
+  }
+  .sign-up h1, .logging-in h1 {
+    font-size: 1.5rem;
+    font-family: "extrabold";
+    text-align: left;
+  }
+  .sign-up form, .logging-in form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .sign-up form input, .logging-in form input {
+    width: 80%;
+    border-radius: 5px;
+    margin: 0.5em;
+    padding: 1em;
+    border: none;
+    background: #D9D9D9;
+    height: 3.2rem;
+    font-family: "medium";
+  }
+  .sign-up form p, .logging-in form p {
+    font-family: "medium";
+    font-size: 1.2rem;
+  }
+  .sign-up form p span a, .logging-in form p span a {
+    text-decoration: none;
+    color: #1CA4CF;
+  }
+  .sign-up form button, .logging-in form button {
+    width: 80%;
+    height: 3.2rem;
+    background: #1CA4CF;
+    color: white;
+    border: none;
+    font-family: "medium";
+    border-radius: 5px;
+  }
+  .sign-up .flex-container, .logging-in .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sign-up .flex-container img, .logging-in .flex-container img {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: center;
+       object-position: center;
   }
 }
 /* Large devices (desktops, 992px and up) */
@@ -171,36 +695,156 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     background: #1CA4CF;
     border-radius: 5px;
     color: white;
-    padding: 1em 2em;
+    padding: 1em 1em;
   }
   header nav ul li a {
-    padding: 0.7em;
-    font-size: 1.06rem;
-    font-family: "medium";
+    padding: 0.35em;
+    font-size: 0.8rem;
+    font-family: "regular";
     text-decoration: none;
     color: black;
   }
   header .main {
-    align-items: self-start;
     margin-top: -3em;
   }
   header .main h1 {
-    font-size: 6.5rem;
+    font-size: 4.5rem;
     font-family: 900;
     margin-top: 0.2em;
   }
   header .main p {
     font-size: 1.4rem;
+    align-self: self-start;
     line-height: 1.35em;
     font-family: "medium";
-    text-align: unset;
     margin-top: 2em;
   }
   header .main button {
     font-size: 1.3rem;
+    margin-left: 9px;
     margin-top: 2em;
     padding: 0.7em 2.3em;
     font-family: "medium";
+    align-self: self-start;
+  }
+  #second-mentor {
+    height: 113vh;
+  }
+  #second-mentor h1 {
+    font-family: "extrabold";
+    font-size: 3.2rem;
+  }
+  #second-mentor p {
+    font-family: "light";
+  }
+  #second-mentor h2 {
+    font-family: "extrabold";
+  }
+  #second-mentor h3 {
+    font-family: "extrabold";
+    font-size: 1.6rem;
+  }
+  #second-mentor #flex-container {
+    flex-direction: row;
+  }
+  #second-mentor #flex-container p {
+    width: 90%;
+  }
+  .programme {
+    height: 100vh;
+    padding-bottom: 4em;
+    background: #D9D9D9;
+  }
+  .programme p {
+    line-height: 1.5em;
+  }
+  .how h1 {
+    font-size: 2.5rem;
+  }
+  .how h2 {
+    font-size: 1.7rem;
+  }
+  .how p {
+    font-size: 1.3rem;
+    font-family: "medium";
+  }
+  .become {
+    height: 80vh;
+  }
+  .become h1 {
+    font-size: 3rem;
+  }
+  .become p {
+    font-size: 1.5rem;
+    width: 90%;
+    font-family: "regular";
+  }
+  .become p {
+    text-align: center;
+  }
+  .become button {
+    background: white;
+    font-size: 1.5rem;
+    font-family: "semi-bold";
+    padding: 1em 2em;
+    border: none;
+  }
+  .forms {
+    margin-left: 3em;
+  }
+  .forms h1 {
+    font-size: 1.8rem;
+    text-align: left;
+    margin: 1em;
+  }
+  .forms h2 {
+    text-align: left;
+    margin: 1em;
+    font-size: 1.3rem;
+  }
+  .forms form {
+    display: flex;
+    flex-wrap: no-wrap;
+  }
+  .forms form .w50 {
+    width: 45%;
+    margin: 1em;
+  }
+  .forms form input {
+    margin: 1em;
+    padding: 0.5em;
+    font-family: "regular";
+    color: black;
+    background: #D9D9D9;
+    border: none;
+    height: 5rem;
+    width: 93%;
+  }
+  .forms form button {
+    background: #1CA4CF;
+    margin: 1em;
+    color: white;
+    width: 94%;
+    border: none;
+    padding: 1em;
+  }
+  footer h1 {
+    font-size: 2.5rem;
+    text-align: unset;
+  }
+  footer ul {
+    justify-content: start;
+    align-items: start;
+  }
+  footer ul li {
+    font-family: "semi-bold";
+    font-size: 1.3rem;
+    line-height: 1.3em;
+  }
+  footer ul .img-container img {
+    height: 24%;
+    padding: 0.5em;
+    width: 24%;
   }
   .about-header .main {
     margin-top: -7em;
@@ -215,10 +859,322 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     font-size: 1.3rem;
   }
   .mentor-header .main p {
+    text-align: left;
+  }
+  .second {
+    height: 80vh;
+  }
+  .second h1 {
+    font-size: 2.7rem;
+  }
+  .second h2 {
+    font-size: 1.4rem;
+    font-family: "semi-bold";
+  }
+  .second p {
+    font-size: 1.5rem;
+    font-family: "light";
+  }
+  .pix {
+    background-size: contain;
+    height: 90vh;
+    padding: 6em;
+    margin: 4em;
+  }
+  .meet h1 {
+    font-size: 2rem;
     text-align: start;
+  }
+  .meet p {
+    font-size: 1.1rem;
+    font-family: "medium";
+    text-align: start;
+  }
+  .meet ul li {
+    font-family: "extrabold";
+    padding: 0.2em;
+  }
+  .meet .images .img-container {
+    height: 7rem;
+    padding: 1em;
+    width: 7rem;
+  }
+  .meet .profile-text {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+  }
+  .meet h2 {
+    font-size: 1.4rem;
+  }
+  .meet h3 {
+    color: #000000;
+    font-size: 1.2rem;
+  }
+  .meet p {
+    font-family: "light";
+  }
+  .meet button {
+    background: #1CA4CF;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3rem;
+    padding: 0.9em 2.3em;
+    color: white;
+    font-family: "medium";
+  }
+  .meet ul li a img {
+    height: 2rem;
+    width: 2rem;
+  }
+  .sign-up, .logging-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
+    height: 110vh;
+    background: white;
+    top: 0;
+  }
+  .sign-up h1, .logging-in h1 {
+    font-size: 1.5rem;
+    font-family: "extrabold";
+    text-align: left;
+  }
+  .sign-up form, .logging-in form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .sign-up form input, .logging-in form input {
+    width: 80%;
+    border-radius: 5px;
+    margin: 0.5em;
+    padding: 1em;
+    border: none;
+    background: #D9D9D9;
+    height: 3.2rem;
+    font-family: "medium";
+  }
+  .sign-up form p, .logging-in form p {
+    font-family: "medium";
+    font-size: 1.2rem;
+  }
+  .sign-up form p span a, .logging-in form p span a {
+    text-decoration: none;
+    color: #1CA4CF;
+  }
+  .sign-up form button, .logging-in form button {
+    width: 80%;
+    height: 3.2rem;
+    background: #1CA4CF;
+    color: white;
+    border: none;
+    font-family: "medium";
+    border-radius: 5px;
+  }
+  .sign-up .flex-container, .logging-in .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sign-up .flex-container img, .logging-in .flex-container img {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: center;
+       object-position: center;
   }
 }
 /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  header .main h1 {
+    font-size: 6.5rem;
+    font-family: 900;
+    margin-top: 0.2em;
+  }
+  header .menu {
+    display: none;
+  }
+  header nav {
+    display: block;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header nav ul li .button {
+    background: #1CA4CF;
+    border-radius: 5px;
+    color: white;
+    padding: 1em 2em;
+  }
+  header nav ul li a {
+    padding: 0.2em;
+    font-size: 0.9rem;
+    font-family: "regular";
+    text-decoration: none;
+    color: black;
+  }
+  header .main {
+    align-items: self-start;
+    margin-top: -3em;
+  }
+  header .main h1 {
+    font-size: 4.5rem;
+    font-family: 900;
+    margin-top: 0.2em;
+  }
+  header .main p {
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 1.35em;
+    font-family: "medium";
+    margin-top: 2em;
+  }
+  header .main button {
+    font-size: 1.3rem;
+    margin-left: 9px;
+    margin-top: 2em;
+    padding: 0.7em 2.3em;
+    font-family: "medium";
+    align-self: self-start;
+  }
+  .about-header .main {
+    margin-top: -7em;
+  }
+  .about-header .main h1 {
+    font-size: 3.5rem;
+    margin-top: 0.3em;
+    text-align: left;
+  }
+  .about-header .main p {
+    text-align: left;
+    font-size: 1.3rem;
+  }
+  #second-mentor {
+    height: 83vh;
+  }
+  .programme {
+    height: 80vh;
+  }
+  .forms {
+    margin-left: 3em;
+  }
+  .forms h1 {
+    font-size: 1.8rem;
+    text-align: left;
+    margin: 1em;
+  }
+  .forms h2 {
+    text-align: left;
+    margin: 1em;
+    font-size: 1.3rem;
+  }
+  .forms .div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .forms form {
+    display: flex;
+    flex-wrap: no-wrap;
+  }
+  .forms form .w50 {
+    width: 45%;
+    margin: 1em;
+  }
+  .forms form input {
+    margin: 1em;
+    padding: 0.5em;
+    font-size: 1.2rem;
+    font-family: "regular";
+    color: black;
+    background: #D9D9D9;
+    border: none;
+    height: 4rem;
+    width: 92.5%;
+  }
+  .forms form button {
+    background: #1CA4CF;
+    margin: 1em;
+    font-size: 1.4rem;
+    color: white;
+    width: 93%;
+    border: none;
+    padding: 1em;
+  }
+  .sign-up, .logging-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
+    height: 110vh;
+    background: white;
+    top: 0;
+  }
+  .sign-up h1, .logging-in h1 {
+    font-size: 1.5rem;
+    font-family: "extrabold";
+    text-align: left;
+  }
+  .sign-up form, .logging-in form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .sign-up form input, .logging-in form input {
+    width: 80%;
+    border-radius: 5px;
+    margin: 0.5em;
+    padding: 1em;
+    border: none;
+    background: #D9D9D9;
+    height: 3.2rem;
+    font-family: "medium";
+  }
+  .sign-up form p, .logging-in form p {
+    font-family: "medium";
+    font-size: 1.2rem;
+  }
+  .sign-up form p span a, .logging-in form p span a {
+    text-decoration: none;
+    color: #1CA4CF;
+  }
+  .sign-up form button, .logging-in form button {
+    width: 80%;
+    height: 3.2rem;
+    background: #1CA4CF;
+    color: white;
+    border: none;
+    font-family: "medium";
+    border-radius: 5px;
+  }
+  .sign-up .flex-container, .logging-in .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sign-up .flex-container img, .logging-in .flex-container img {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Custom media queries

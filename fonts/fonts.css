@@ -12,3 +12,19 @@
     font-family: "extrabold";
     src: url(/fonts/RedHatDisplay-ExtraBold.ttf);
 }
+@font-face {
+    font-family: "semi-bold";
+    src: url(/fonts/RedHatDisplay-SemiBold.ttf);
+}
+@font-face {
+    font-family: "regular";
+    src: url(/fonts/RedHatDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: "bold";
+    src: url(/fonts/RedHatDisplay-Bold.ttf);
+}
+@font-face {
+    font-family: "black";
+    src: url(/fonts/RedHatDisplay-Black.ttf);
+}
