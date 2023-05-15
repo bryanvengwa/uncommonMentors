@@ -14,6 +14,11 @@ const logInBtn = document.querySelector(".log-in");
 const signUpBtn = document.querySelector(".sign-Up-btn");
 const loggingIn = document.querySelector(".logging-in");
 const closeModals = document.querySelector(".close-modals");
+ const menu = document.querySelector(".menu");
+ const bar = document.querySelector(".two");
+ const mobileNav = document.querySelector(".mobile-nav");
+ const signMobile = document.querySelector(".sign-mobile");
+ 
 
 // const rect = mentorH.getBoundingClientRect();
 // console.log(rect);
@@ -21,6 +26,11 @@ const closeModals = document.querySelector(".close-modals");
 // const mentorY = rect.y;
 
 let currentHref;
+
+menu.addEventListener('click', (e) => {
+	menu.classList.toggle('open')
+	mobileNav.classList.toggle('hiding');
+})
 
 
 
@@ -41,6 +51,12 @@ navBar.addEventListener("click", function (event) {
 
 	}
 });
+signMobile.addEventListener('click', function(event) {
+	event.preventDefault();
+	signUp.classList.toggle("hide");
+	menu.classList.toggle("open");
+	mobileNav.classList.toggle("hiding");
+})
 
 closeModal.addEventListener('click', function(event){
 	event.preventDefault()

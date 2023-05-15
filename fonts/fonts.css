@@ -1,30 +1,31 @@
 @font-face {
     font-family: "light";
-    src: url(/fonts/RedHatDisplay-Light.ttf);
+  
+    src: url(./RedHatDisplay-Light.ttf);
 }
 
 @font-face {
     font-family: "medium";
-    src: url(/fonts/RedHatDisplay-Medium.ttf);
+    src: url(./RedHatDisplay-Medium.ttf);
 }
 
 @font-face {
     font-family: "extrabold";
-    src: url(/fonts/RedHatDisplay-ExtraBold.ttf);
+    src: url(./RedHatDisplay-ExtraBold.ttf);
 }
 @font-face {
     font-family: "semi-bold";
-    src: url(/fonts/RedHatDisplay-SemiBold.ttf);
+    src: url(./RedHatDisplay-SemiBold.ttf);
 }
 @font-face {
     font-family: "regular";
-    src: url(/fonts/RedHatDisplay-Regular.ttf);
+    src: url(./RedHatDisplay-Regular.ttf);
 }
 @font-face {
     font-family: "bold";
-    src: url(/fonts/RedHatDisplay-Bold.ttf);
+    src: url(./RedHatDisplay-Bold.ttf);
 }
 @font-face {
     font-family: "black";
-    src: url(/fonts/RedHatDisplay-Black.ttf);
+    src: url(./RedHatDisplay-Black.ttf);
 }
